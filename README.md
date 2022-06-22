@@ -1,2 +1,2 @@
-# Skincare
-![Skincare](https://github.com/Edanriell/oldProjects-2/blob/master/AnimatedText/skincare.png?raw=true)
+# AllFood
+![AllFood](https://github.com/Edanriell/AllFood/blob/master/allFood.png?raw=true)
