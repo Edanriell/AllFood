@@ -1,0 +1,33 @@
+=fixImageBug
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+  
+.page-footer
+  grid-area: 3 / 1 / -1 / -1
+  margin: 54px 0 0 0
+  padding: 25px 0 0 0
+  border-top: 1px solid rgba(1, 23, 10, 0.1)
+  &__content
+    display: grid
+    grid-template-columns: auto auto 1fr
+    &__copyright
+      line-height: 1.644rem
+      margin: 0 20px 0 0
+    &__politics
+      line-height: 1.644rem
+      color: rgba(1, 23, 10, 1)
+    &__social-links
+      margin: 0 0 0 711px
+      display: grid
+      grid-template-columns: repeat(auto-fit, 32px)
+      justify-self: end
+      max-width: 500px
+      column-gap: 20px
+      &__item
+        list-style: none
+        &__icon
+          +fixImageBug
+          transition: all 0.1s ease-in-out
+          &:hover
+            transform: scale(1.5)

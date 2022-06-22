@@ -1,0 +1,126 @@
+=mainPromoFont
+  font-family: "Raleway-Medium" 
+  font-weight: 500 
+  font-style: normal 
+  font-size: 1.8rem 
+  line-height: 2.34rem 
+=promoItemImage
+  grid-row: image 
+  width: 100% 
+  border-radius: 10px 10px 0px 0px 
+=promoDescriptionText
+  grid-row: text 
+  text-align: center 
+  margin: 0 10px 10px 10px 
+
+.page-promo
+  grid-row: 2 / 3
+  display: grid
+  grid-template-rows: repeat(auto-fill, minmax(152px, max-content))
+  row-gap: 40px
+  &__item-small
+    grid-row: span 1
+    position: relative
+    background: #FFFFFF
+    border-radius: 10px
+    filter: drop-shadow(0px 5px 30px rgba(29, 29, 32, 0.07))
+    max-height: 152px
+    &__header
+      position: absolute
+      top: 20px
+      left: 20px
+      max-width: 111px
+      +mainPromoFont
+      color: rgba(1, 23, 10, 1)
+    &__image
+      border-radius: 10px
+      width: 100%
+    &__link
+      position: absolute
+      top: 118px
+      left: 20px
+      +mainPromoFont
+      font-size: 1.2rem
+      line-height: 1.409rem
+      color: rgba(49, 183, 104, 1)
+  &__item-medium
+    max-height: 344px
+    grid-row: span 2
+    display: grid
+    grid-template-rows: [image]165px [header]auto [text]auto [link]auto
+    row-gap: 10px
+    background: #FFFFFF
+    border-radius: 10px
+    box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07)
+    padding: 10px 10px 30px 10px
+    &__header
+      grid-row: header
+      +mainPromoFont
+      color: rgba(1, 23, 10, 1)
+      margin: 5px 0 0 0
+      text-align: center
+    &__image
+      +promoItemImage
+    &__text
+      +promoDescriptionText
+    &__link
+      grid-row: link
+      margin: 0 0 0 83px
+      +mainPromoFont
+      font-size: 1.2rem
+      line-height: 1.409rem
+      color: rgba(49, 183, 104, 1)
+  &__item-large
+    max-height: 536px
+    grid-row: span 3
+    display: grid
+    grid-template-rows: [image]252px [header]auto [text]auto [form]1fr
+    row-gap: 10px
+    background: #FFFFFF
+    box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07)
+    border-radius: 10px
+    padding: 10px 10px 30px 10px
+    &__header
+      grid-row: header
+      text-align: center
+      margin: 5px 0 0 0
+      +mainPromoFont
+      color: rgba(1, 23, 10, 1)
+    &__image
+      +promoItemImage
+    &__text
+      +promoDescriptionText
+      margin: 0 10px 15px 10px
+    &__form
+      grid-row: form
+      display: grid
+      grid-template-rows: repeat(2, 1fr)
+      row-gap: 15px
+      margin: 0 10px 0 10px
+      &__input
+        grid-row: 1 / 2
+        border: 1px solid rgba(1, 23, 10, 0.2)
+        border-radius: 5px
+        padding: 12px
+        outline: none
+        &::placeholder
+          font-size: 1.2rem
+          line-height: 1.409rem
+          color: rgba(1, 23, 10, 0.2)
+      &__submit-btn
+        grid-row: 2 / 3
+        padding: 12px 67px
+        background: #31B768
+        border-radius: 5px
+        font-family: "Raleway-SemiBold" 
+        font-weight: 600 
+        font-style: normal 
+        font-size: 1.2rem 
+        line-height: 1.409rem 
+        color: rgba(255, 255, 255, 1)
+        outline: none
+        border: none
+        transition: all 0.15s ease-in-out
+        cursor: pointer
+        &:hover
+          background: #2d9c5c

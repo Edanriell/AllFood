@@ -1,0 +1,236 @@
+$slider-width: 1098px
+$slider-height: 344px
+  
+.page-main__slider //slider
+  position: relative
+  width: $slider-width
+  height: $slider-height
+  filter: drop-shadow(0px 5px 30px rgba(29, 29, 32, 0.07))
+  border-radius: 10px
+  &__wrapper //wrapper
+    overflow: hidden
+    position: relative
+    width: $slider-width
+    height: $slider-height
+    z-index: 1
+    border-radius: 10px
+  &__slides  //slides
+    display: flex
+    position: relative
+    top: 0
+    left: -$slider-width
+    width: 10000px
+    border-radius: 10px
+    &__shift
+      transition: left .2s ease-out // make
+    &__slide //slide
+      width: $slider-width
+      height: $slider-height
+      cursor: pointer
+      display: flex
+      flex-direction: column
+      justify-content: center
+      transition: all 1s
+      position: relative
+      border-radius: 10px
+      &:nth-child(2) &__description
+        margin: 106px auto 106px 100px
+        text-shadow: 0px 0.2px 0.3px rgba(0,0,0,0.4), 0px 0.2px 0.3px rgba(0,0,0,0.1), 0px 0.2px 0.3px rgba(0,0,0,0.1)
+        &__title
+          color: black
+        &__text
+          color: black
+      &:nth-child(3) &__description
+        margin: 106px auto 106px 100px
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
+        &__title
+          color: white
+        &__text
+          color: white
+      &:nth-child(4) &__description
+        margin: 106px auto 106px 150px
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
+        &__title
+          color: white
+        &__text
+          color: white
+      &:nth-child(5) &__description
+        margin: 106px auto 106px 100px
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
+        &__title
+          color: white
+        &__text
+          color: white
+      &:nth-child(6) &__description
+        margin: 106px auto 106px 540px
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
+        &__title
+          color: white
+        &__text
+          color: white
+      &__image
+        width: $slider-width
+        height: $slider-height
+        border-radius: 10px
+      &__description
+        display: none
+        grid-template-rows: repeat(2, auto)
+        row-gap: 2rem
+        max-width: 436px
+        position: absolute
+        top: 0
+        left: 0
+        margin: 106px auto 106px 60px
+        &__animate
+          display: grid
+          -webkit-animation: text-fade-in-right 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+          animation: text-fade-in-right 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+        &__title
+          font-family: "Raleway-Medium"
+          font-weight: 500
+          font-style: normal
+          font-size: 2.6rem
+          line-height: 3.38rem
+          color: rgba(1, 23, 10, 1)
+        &__text
+          font-size: 1.6rem
+          line-height: 2.24rem
+  &__dots
+    position: absolute
+    top: 314px
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: grid
+    grid-auto-flow: column
+    grid-template-columns: repeat(auto-fill, 10px)
+    column-gap: 10px
+    list-style: none
+    z-index: 1
+    &__dot
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      cursor: pointer
+      border: none
+      &__inactive
+        background-color: #e8e8eb
+      &__active
+        background-color: #31b768
+  &__controls
+    position: absolute
+    top: 50%
+    width: 40px
+    height: 40px
+    background: #fff
+    border-radius: 10px
+    margin-top: -20px
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 26px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px
+    z-index: 2
+    &__prev-slide-btn
+      display: none
+      background-size: 22px
+      background-position: center
+      background-repeat: no-repeat
+      cursor: pointer
+      background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png)
+      left: 10px
+      border: none
+      width: 40px
+      height: 40px
+      &__mouseover
+        display: block
+        -webkit-animation: fade-in-right 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+        animation: fade-in-right 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+      &__mouseout
+        display: block
+        -webkit-animation: fade-out-bck 0.25s ease-out both
+        animation: fade-out-bck 0.25s ease-out both
+    &__next-slide-btn
+      display: none
+      background-size: 22px
+      background-position: center
+      background-repeat: no-repeat
+      cursor: pointer
+      background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png)
+      right: 10px
+      border: none
+      &__mouseover 
+        display: block
+        -webkit-animation: fade-in-left 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+        animation: fade-in-left 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+      &__mouseout
+        display: block
+        -webkit-animation: fade-out-bck 0.25s ease-out both
+        animation: fade-out-bck 0.25s ease-out both
+@-webkit-keyframes fade-in-right 
+  0% 
+    -webkit-transform: translateX(10px)
+    transform: translateX(10px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+@keyframes fade-in-right 
+  0% 
+    -webkit-transform: translateX(10px)
+    transform: translateX(10px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+@-webkit-keyframes fade-in-left 
+  0% 
+    -webkit-transform: translateX(-10px)
+    transform: translateX(-10px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+@keyframes fade-in-left 
+  0% 
+    -webkit-transform: translateX(-10px)
+    transform: translateX(-10px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+@-webkit-keyframes fade-out-bck 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+  100% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+@keyframes fade-out-bck 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+  100% 
+    -webkit-transform:  perspective(800px) translateZ(-80px)
+    transform: perspective(800px)  translateZ(-80px)
+    opacity: 0
+@-webkit-keyframes text-fade-in-right 
+  0% 
+    -webkit-transform: translateX(50px)
+    transform: translateX(50px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+@keyframes text-fade-in-right 
+  0% 
+    -webkit-transform: translateX(50px)
+    transform: translateX(50px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1

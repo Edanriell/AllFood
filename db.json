@@ -1,0 +1,168 @@
+{
+  "Items": [
+    {
+      "itemId": 0,
+      "itemSize": "large",
+      "itemClass": "page-main__catalog__content__item-large",
+      "itemImage": "./img/cards/img1-lg.png",
+      "itemImageWidth": 534,
+      "itemImageHeight": 192,
+      "itemAltText": "",
+      "itemName": "Рулетики из бекона",
+      "itemDescription": "Ужасно вкусно. Сытно! Просто и супер универсально. Ведь такое блюдо можно подавать не только в будни, но и на праздники. Его можно подавать и как самостоятельное, и как закуску, добавить любой гарнир ...",
+      "itemLikes": "220",
+      "itemTimeToCook": "35 мин",
+      "itemCalories": "150 ккал"
+    },
+    {
+      "itemId": 1,
+      "itemSize": "small",
+      "itemClass": "page-main__catalog__content__item-small",
+      "itemImage": null,
+      "itemImageWidth": null,
+      "itemImageHeight": null,
+      "itemAltText": "",
+      "itemName": "Омлет-рулет",
+      "itemDescription": "Аппетитный омлет с кабачком и большим количеством ...",
+      "itemLikes": "510",
+      "itemTimeToCook": "10 мин",
+      "itemCalories": "55 ккал"
+    },
+    {
+      "itemId": 2,
+      "itemSize": "medium",
+      "itemClass": "page-main__catalog__content__item-medium",
+      "itemImage": "./img/cards/img2.png",
+      "itemImageWidth": 252,
+      "itemImageHeight": 192,
+      "itemAltText": "",
+      "itemName": "Стейк из лосося",
+      "itemDescription": " Лосось обладает очень нежным, мягким вкусом и восхитителен сам по себе ...",
+      "itemLikes": "195",
+      "itemTimeToCook": "20 мин",
+      "itemCalories": "88 ккал"
+    },
+    {
+      "itemId": 3,
+      "itemSize": "small",
+      "itemClass": "page-main__catalog__content__item-small",
+      "itemImage": null,
+      "itemImageWidth": null,
+      "itemImageHeight": null,
+      "itemAltText": "",
+      "itemName": "Куриные наггетсы",
+      "itemDescription": "Наггетсы из куриной грудки придутся по вкусу всем без ...",
+      "itemLikes": "260",
+      "itemTimeToCook": "20 мин",
+      "itemCalories": "138 ккал"
+    },
+    {
+      "itemId": 4,
+      "itemSize": "large",
+      "itemClass": "page-main__catalog__content__item-large",
+      "itemImage": "./img/cards/img3-lg.png",
+      "itemImageWidth": 534,
+      "itemImageHeight": 192,
+      "itemAltText": "",
+      "itemName": "Пицца Маргарита",
+      "itemDescription": "Традиционное итальянское блюде, известное во всем мире. Ее состав очень простой, но вкус не оставляет равнодушным. Понадобится совсем небольшой перечень ингредиентов, но важно использовать именно те ...",
+      "itemLikes": "210",
+      "itemTimeToCook": "25 мин",
+      "itemCalories": "220 ккал"
+    },
+    {
+      "itemId": 5,
+      "itemSize": "medium",
+      "itemClass": "page-main__catalog__content__item-medium",
+      "itemImage": "./img/cards/img4.png",
+      "itemImageWidth": 252,
+      "itemImageHeight": 192,
+      "itemAltText": "",
+      "itemName": "Сочные ребрышки",
+      "itemDescription": "Этот ароматный сладкий соус-маринад для рёбрышек неотличим от соуса, который ...",
+      "itemLikes": "80",
+      "itemTimeToCook": "60 мин",
+      "itemCalories": "260 ккал"
+    },
+    {
+      "itemId": 6,
+      "itemSize": "medium",
+      "itemClass": "page-main__catalog__content__item-medium",
+      "itemImage": "./img/cards/img5.png",
+      "itemImageWidth": 252,
+      "itemImageHeight": 192,
+      "itemAltText": "",
+      "itemName": "Салат с тунцом",
+      "itemDescription": "Свежий взгляд на популярный рыбный салат с обжаренным тунцом, овощами и зеленью ...",
+      "itemLikes": "412",
+      "itemTimeToCook": "20 мин",
+      "itemCalories": "85 ккал"
+    },
+    {
+      "itemId": 7,
+      "itemSize": "small",
+      "itemClass": "page-main__catalog__content__item-small",
+      "itemImage": null,
+      "itemImageWidth": null,
+      "itemImageHeight": null,
+      "itemAltText": "",
+      "itemName": "Салат из фасоли",
+      "itemDescription": "Сочный, вкусный и достаточно сытный салат из фасоли и ...",
+      "itemLikes": "132",
+      "itemTimeToCook": "20 мин",
+      "itemCalories": "85 ккал"
+    },
+    {
+      "itemId": 8,
+      "itemSize": "medium",
+      "itemClass": "page-main__catalog__content__item-medium",
+      "itemImage": "./img/cards/img6.png",
+      "itemImageWidth": 252,
+      "itemImageHeight": 192,
+      "itemAltText": "",
+      "itemName": "Салат с креветками",
+      "itemDescription": "Довольно изысканное блюдо, которое часто подают в ресторанах, готовится очень ...",
+      "itemLikes": "640",
+      "itemTimeToCook": "15 мин",
+      "itemCalories": "105 ккал"
+    },
+    {
+      "itemId": 9,
+      "itemSize": "large",
+      "itemClass": "page-main__catalog__content__item-large",
+      "itemImage": "./img/cards/img7-lg.png",
+      "itemImageWidth": 534,
+      "itemImageHeight": 192,
+      "itemAltText": "",
+      "itemName": "Тосты с авокадо и шпинатом",
+      "itemDescription": "Быстрый и очень полезный завтрак с высоким содержанием насыщенных жиров и клетчатки. Для тоста рекомендуем выбирать цельнозерновой хлеб, а авокадо сорта Хаас. Можно добавить другие...",
+      "itemLikes": "750",
+      "itemTimeToCook": "5 мин",
+      "itemCalories": "170 ккал"
+    },
+    {
+      "itemId": 10,
+      "itemSize": "small",
+      "itemClass": "page-main__catalog__content__item-small",
+      "itemImage": null,
+      "itemImageWidth": null,
+      "itemImageHeight": null,
+      "itemAltText": "",
+      "itemName": "Сырные кексы",
+      "itemDescription": "Отличное дополнение к первым блюдам, к чаю или ...",
+      "itemLikes": "222",
+      "itemTimeToCook": "35 мин",
+      "itemCalories": "147 ккал"
+    }
+  ],
+  "emails": [
+    {
+      "email": "jenixberg@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "jenixberg@gmail.com",
+      "id": 2
+    }
+  ]
+}

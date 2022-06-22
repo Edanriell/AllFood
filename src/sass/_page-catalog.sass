@@ -1,0 +1,175 @@
+=textStyleIcons
+  font-size: 1.2rem
+  line-height: 1.409rem
+  color: rgba(1, 23, 10, 1)
+=itemBox
+  background: #FFFFFF 
+  box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07) 
+  border-radius: 10px
+=btn
+  background: rgba(49, 183, 104, 1) 
+  border: none 
+  border-radius: 10px 
+  padding: 19px 69px 
+  font-family: "Raleway-SemiBold" 
+  font-weight: 600 
+  font-style: normal 
+  font-size: 1.6rem 
+  line-height: 1.878rem 
+  color: rgba(255, 255, 255, 1) 
+  cursor: pointer 
+  transition: all 0.15s ease-in-out 
+  &:hover
+    background: #2d9c5c
+=iconProperties
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+=cardDescriptionText
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+
+.page-main__catalog
+  margin: 35px 0 0 0
+  &__content
+    display: grid
+    grid-auto-flow: dense
+    grid-template-columns: repeat(4, minmax(120px, 1fr))
+    grid-gap: 40px 30px
+    list-style: none
+    &__item-large
+      +itemBox
+      min-height: 344px
+      grid-row: span 2
+      grid-column: span 2
+      img
+        grid-row: 1 / 2
+      h3
+        margin: 10px 0 8px 20px
+      p
+        +cardDescriptionText
+        height: 57px
+        margin: 0 20px 18px
+      dl
+        margin: 0 0 20px 20px
+    &__item-medium
+      +itemBox
+      min-height: 344px
+      grid-row: span 2
+      grid-column: span 1
+      img
+        grid-row: 1 / 2
+      h3
+        margin: 10px 0 8px 20px
+      p
+        +cardDescriptionText
+        height: 57px
+        margin: 0 20px 18px
+      dl
+        margin: 0 0 20px 20px
+    &__item-small
+      +itemBox
+      min-height: 152px
+      position: relative
+      padding: 5px
+      grid-row: span 1
+      grid-column: span 1
+      p
+        height: 38px
+        +cardDescriptionText
+        -webkit-line-clamp: 2
+      article a::before
+        content: ""
+        position: absolute
+        top: 5px
+        bottom: 5px
+        left: 5px
+        right: 5px
+        border: 1px dashed #31B768
+        border-radius: 10px
+      article
+        padding: 15px
+        dl
+          margin: 29px 0 0 0
+        h3
+          margin: 0 0 8px 0
+    &__item__link
+      display: grid
+      text-decoration: none
+    &__item__image
+      grid-row: span 1
+      object-fit: contain
+      border-radius: 10px 10px 0px 0px
+    &__item__name
+      grid-row: span 1
+      font-family: "Raleway-Medium"
+      font-weight: 500
+      font-style: normal
+      font-size: 1.8rem
+      line-height: 2.34rem
+      color: rgba(1, 23, 10, 1)
+      text-decoration: none
+      font-feature-settings: 'pnum' on, 'lnum' on
+    &__item__description
+      grid-row: span 1
+      color: rgba(1, 23, 10, 1)
+    &__item__info
+      grid-row: span 1
+      display: flex
+      align-items: center
+      &__heart-icon
+        width: 14px
+        height: 12px
+        background-image: url("../img/icons/heart.svg")
+        +iconProperties
+        margin: 0 6px 0 0
+      &__total-hearts
+        +textStyleIcons
+        margin: 0 23px 0 0
+      &__clock-icon
+        width: 13px
+        height: 14px
+        background-image: url("../img/icons/time.svg")
+        +iconProperties
+        margin: 0 6px 0 0
+      &__time-to-cook
+        +textStyleIcons
+        margin: 0 23px 0 0
+      &__energy-icon
+        width: 9px
+        height: 14px
+        background-image: url("../img/icons/energy.svg")
+        +iconProperties
+        margin: 0 6px 0 0
+      &__total-calories
+        +textStyleIcons
+  &__load-more
+    align-self: start
+    grid-column: 1 / -1
+    width: 252px
+    margin: 40px 0 0 282px
+    +btn
+.fade-in-fwd 
+  -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation: fade-in-fwd 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+@-webkit-keyframes fade-in-fwd 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+@keyframes fade-in-fwd 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1

@@ -1,0 +1,101 @@
+=filterTextStyles
+  font-family: "Raleway-Medium"
+  font-weight: 500
+  font-style: normal
+  font-size: 1.4rem
+  line-height: 1.644rem
+  color: rgba(1, 23, 10, 1) 
+=btnOutline
+  display: inline-block
+  border: 1px solid #31B768
+  border-radius: 5px
+  padding: 12px 20px
+  background-color: transparent
+  line-height: 1.644rem
+  transition: all 0.15s ease-in-out 
+  
+.page-main__settings
+  display: grid
+  grid-template-rows: [sort-and-search]auto [tags]1fr
+  // row-gap: 30px
+  margin: 40px 0 0 0
+  &__sort-and-search
+    grid-row: sort-and-search
+    display: grid
+    grid-template-columns: auto 1fr 252px
+    column-gap: 20px
+    align-items: center
+    &__sort-text
+      +filterTextStyles
+      margin: 0 0 14px 0
+    &__sort
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+      &__option
+        margin: 0 20px 14px 0
+        &:last-child
+          margin: 0
+        &__btn
+          +btnOutline
+          display: inline-block
+          cursor: pointer
+          &__active
+            background-color: #31B768
+            color: #FFF
+          &:hover
+            background-color: #31B768
+            color: white
+    &__search__input
+      min-width: 252px
+      max-height: 40px
+      margin: 0 0 14px 0
+      border: 1px solid #31B768
+      border-radius: 5px
+      outline: none
+      background-color: transparent
+      padding: 12px 13px 12px 15px
+      background-image: url("../img/icons/search.svg")
+      background-repeat: no-repeat
+      background-position: 223px center
+      &::-webkit-search-cancel-button
+        -webkit-appearance: none
+        cursor: pointer
+        height: 20px
+        width: 20px
+        background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%
+        background-size: contain
+        transition: all 0.15s ease-in-out
+      &::placeholder
+        font-size: 1.4rem
+        line-height: 1.644rem
+        color: rgba(1, 23, 10, 1)
+      &:focus
+        background: none
+  &__tags
+    grid-row: tags
+    display: grid
+    grid-template-columns: max-content 1fr
+    column-gap: 20px
+    &__tags-text
+      margin: 24px 0 0 0 
+      +filterTextStyles
+    &__tag-list
+      list-style: none
+      display: flex
+      flex-wrap: wrap
+      &__item
+        margin: 14px 15px 0 0
+        &:last-child
+          margin: 14px 0 0 0
+        &__link
+          display: inline-block
+          +btnOutline
+          padding: 10px 15px
+          text-decoration: none
+          font-size: 1.2rem
+          line-height: 1.409rem
+          color: rgba(1, 23, 10, 1)
+          &:hover
+            background-color: #31B768
+            color: white
